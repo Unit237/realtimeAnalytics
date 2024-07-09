@@ -1,5 +1,5 @@
 # RealTime And Historical charts
-The repository contains code for building realtime and historical charts by leveraging Go555ogle Pub/Sub and SocketIO for realtime and Bigquery and Flask for historical.
+The repository contains code for building realtime and historical charts by leveraging Google Pub/Sub and SocketIO for realtime and Bigquery and Flask for historical.
 ## Steps
 + Create/Setup your GCP environment (we'll need pub/sub and bigquery for this project)
   + create the json secret as seen starting at minute 1:34 in this video https://www.youtube.com/watch?v=xOtrCmPjal8]
