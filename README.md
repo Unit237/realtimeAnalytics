@@ -26,4 +26,4 @@ https://github.com/Unit237/realtimeAnalytics/assets/171470270/7da73802-07dc-4906
 ## The reads in bigquery are quite fast when table is relatively small <10mb speeds of 300ms as seen here 
 ![Screenshot 2024-07-09 at 4 12 03 PM](https://github.com/Unit237/realtimeAnalytics/assets/171470270/b4c540b9-661f-4a07-91fa-47c35b8ecf7a)
 ## Architecture
-<img width="1378" alt="Screenshot 2024-07-09 at 4 13 15 PM" src="https://github.com/Unit237/realtimeAnalytics/assets/171470270/f2dc9b3d-6ea7-41fe-a2a5-77952600947c">
+![Screenshot 2024-07-10 at 1 26 39 PM](https://github.com/Unit237/realtimeAnalytics/assets/171470270/cda5213d-410f-42d1-b69b-d6babda7c06f)
