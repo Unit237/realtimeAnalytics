@@ -25,7 +25,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 
 # Initialize Pub/Sub client
 subscriber = pubsub_v1.SubscriberClient()
-subscription_path = 'projects/helical-bonsai-428613-q5/subscriptions/real-time-price-sub'
+subscription_path = config['DEFAULT']['subscription_path']
 
 # Global variable to track events
 tick = 0

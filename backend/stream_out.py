@@ -18,7 +18,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 publisher = pubsub_v1.PublisherClient()
 topic_path = config['DEFAULT']['topic_path']
 
-for _ in range(10):
+for _ in range(7):
     random_float = round(random.uniform(1, 100), 2)
     random_float = str(random_float)
 
