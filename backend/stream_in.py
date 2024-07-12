@@ -29,7 +29,7 @@ subscription_path = config['DEFAULT']['subscription_path']
 
 # Global variable to track events
 tick = 0
-value = '12'
+value = '0'
 # Define callback function to handle Pub/Sub messages
 def callback(message):
     global tick
@@ -76,7 +76,6 @@ if __name__ == '__main__':
     streaming_pull_future = subscriber.subscribe(subscription_path, callback=callback)
     print(f"Listening for messages on {subscription_path}")
     socketio_thread.start()
-    #eventlet.spawn(emit_stream)
 
     # Keep the main thread from exiting so the subscriber can continue to receive messages
     try:
