@@ -2,12 +2,19 @@ from flask import Flask, jsonify
 from google.cloud import bigquery
 import os
 import json
+import configparser
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
 # Set the path to your Google Cloud credentials
-credentials_path = '/Users/mvii/Desktop/RealTimeBigQuery/backend/helical-bonsai-428613-q5-7ac364e31e63.json'
+# Create a ConfigParser object
+config = configparser.ConfigParser(interpolation=None)
+
+# Read the settings file
+config.read('settings.ini')
+
+credentials_path = config['DEFAULT']['credentials_path']
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 
 # Initialize a BigQuery client

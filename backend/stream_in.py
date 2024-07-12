@@ -61,7 +61,7 @@ def emit_stream():
     while True:
         socketio.sleep(1)
         if prev_value != value:
-            socketio.emit('cpu', {'name': tick, 'value': value})
+            socketio.emit('newPrice', {'name': tick, 'value': value})
             print(f"Emitting 'cpu' event: name={tick}, value={value}")
             prev_value = value
 
