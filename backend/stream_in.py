@@ -1,4 +1,3 @@
-import eventlet
 from flask import Flask
 from flask_socketio import SocketIO
 import os
@@ -6,7 +5,6 @@ import json
 from google.cloud import pubsub_v1
 from concurrent.futures import TimeoutError
 import threading
-import time
 import configparser
 
 # Initialize Flask app and SocketIO
